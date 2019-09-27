@@ -7,6 +7,7 @@ import java.util.Random;
 public class JavaRebootApplication {
 
 	public static void main(String[] args) throws Exception {
+		System.out.println("防掉线服务已经启动。。。。。");
 		JavaRebootApplication j = new JavaRebootApplication();
 		j.run(null);
 	}
