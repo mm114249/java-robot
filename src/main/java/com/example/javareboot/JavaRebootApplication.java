@@ -44,8 +44,8 @@ public class JavaRebootApplication {
 
 
 		while (true){
-			Thread.sleep(30*1000);
-			int max=list.size()-1;
+			Thread.sleep(1*1000);
+			int max=list.size();
 			Random generate = new Random();
 			int j = generate.nextInt(max);
 			int key=list.get(j);
