@@ -31,26 +31,28 @@ public class JavaRebootApplication {
 		list.add(D);
 		list.add(X);
 
-		//先设置为走动
+		
+
+
+		while (true){
+			//先设置为走动
 		robot.keyPress(J);
 		robot.delay(100);
 		robot.keyRelease(J);
 
 		//进入潜行
-		Thread.sleep(5*1000);
+		Thread.sleep(1*1000);
 		robot.keyPress(Q);
 		robot.delay(100);
 		robot.keyRelease(Q);
-
-
-		while (true){
-			Thread.sleep(1*1000);
+			
+			Thread.sleep(20*1000);
 			int max=list.size();
 			Random generate = new Random();
 			int j = generate.nextInt(max);
 			int key=list.get(j);
 			robot.keyPress(key);
-			robot.delay(2000);
+			robot.delay(1000);
 			robot.keyRelease(key);
 		}
 	}
